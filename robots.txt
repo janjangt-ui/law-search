@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://janjangt-ui.github.io/law-search/sitemap.xml
