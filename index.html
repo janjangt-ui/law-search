@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NotebookLM คลังกฎหมาย — แยกหมวดคดี | Surachet Legal AI</title>
-<meta name="description" content="คลังกฎหมายและคำพิพากษาไทย แยกหมวดคดี ค้นหาและศึกษาผ่าน NotebookLM พร้อมแพ็กเกจบริการค้นคว้ากฎหมาย และมีการอัปเดตข้อมูลทุกวัน">
+<meta name="description" content="คลังกฎหมายและคำพิพากษาไทย แยกหมวดคดี ค้นหาและศึกษาผ่าน NotebookLM พร้อมบริการตรวจงานกฎหมายโดยผู้เชี่ยวชาญ รับร่างเอกสารและให้คำปรึกษากฎหมายออนไลน์">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://janjangt-ui.github.io/law-search/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -131,6 +131,23 @@ h1 span{color:var(--text-dim);font-weight:400;font-size:12.5px;display:block;mar
 .paydetail{display:none;border-top:1px solid var(--line);padding-top:15px}.paydetail.show{display:block}.qrwrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.qr{background:#fff;padding:10px;border-radius:12px;min-width:200px;min-height:200px}.paymeta{flex:1;min-width:220px}.pricebig{font-size:29px;color:var(--gold);font-weight:700}.promptpay{font-size:18px;color:#fff;margin:5px 0}.paynote{font-size:12px!important;margin-top:8px!important}
 .locked-note{font-size:11px;color:#e6b85c;margin-top:4px}
 .legalnotice{margin:14px 0 0;background:rgba(180,70,70,.08);border:1px solid rgba(220,110,110,.35);border-radius:12px;padding:13px 15px;color:#c9bfb2;font-size:12px;line-height:1.75}.legalnotice strong{color:#f0b6a6}.legalnotice ul{margin:6px 0 0 20px}
+.servicebox{margin:14px 0 0;background:rgba(74,143,212,.07);border:1px solid rgba(74,143,212,.35);border-radius:14px;padding:16px;color:var(--text);font-size:13px;line-height:1.75}
+.servicebox h2{font-size:18px;color:#9ec9f5;margin-bottom:8px}
+.servicebox h3{font-size:15px;color:var(--gold);margin:14px 0 6px}
+.servicebox p{color:#c9c2b7;margin:5px 0}
+.servicebox ol,.servicebox ul{margin:6px 0 0 22px}
+.servicebox li{margin:5px 0}
+.pricegrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}
+.pricecard{background:#13110d;border:1px solid var(--line);border-radius:12px;padding:12px}
+.pricecard strong{display:block;color:var(--gold);font-size:15px}
+.pricecard span{display:block;color:var(--text-dim);font-size:12px;margin-top:3px}
+.pricecard.urgent{border-color:#a44;background:rgba(170,68,68,.08)}
+.contactline{margin-top:12px;padding:10px 12px;border-radius:10px;background:#13110d;border:1px solid var(--line)}
+.servicebox a{color:#9ec9f5;word-break:break-word}
+.system-list{columns:2;column-gap:28px}
+.system-list li{break-inside:avoid}
+@media(max-width:760px){.pricegrid{grid-template-columns:1fr}.system-list{columns:1}}
+
 @media(max-width:640px){.paygrid{grid-template-columns:1fr}.qrwrap{justify-content:center}.paymeta{text-align:center}}
 @media(max-width:640px){.go{flex-direction:column;}.name{font-size:13.5px;}.gtitle{font-size:14.5px;}.stackname{font-size:13.5px;}}
 </style>
@@ -178,7 +195,74 @@ h1 span{color:var(--text-dim);font-weight:400;font-size:12.5px;display:block;mar
 <li>ผลการค้นหาและคำตอบจาก AI มีไว้เพื่อการศึกษาและค้นคว้า อาจคลาดเคลื่อนและไม่ใช่คำปรึกษากฎหมายจากทนายความ ผู้ใช้ควรตรวจสอบกับเอกสารราชการฉบับปัจจุบันหรือผู้ประกอบวิชาชีพก่อนนำไปใช้</li>
 </ul>
 <div style="margin-top:7px">ติดต่อผู้ให้บริการ: <a href="mailto:janjang.t@gmail.com" style="color:var(--gold)">janjang.t@gmail.com</a> · LINE ID: <b style="color:#7ed47e">surachet.a</b></div>
+
 </div>
+
+<div class="servicebox">
+<h2>⚖️ บริการตรวจงานกฎหมายและรับดำเนินงานคดีออนไลน์</h2>
+<p><strong>มีการอัปเดตข้อมูลทุกวัน</strong> และสามารถขอให้ผู้เชี่ยวชาญตรวจสอบผลวิเคราะห์จาก AI เพิ่มเติมได้</p>
+
+<h3>ค่าบริการตรวจและจัดทำเอกสาร</h3>
+<div class="pricegrid">
+  <div class="pricecard"><strong>ตรวจเนื้อหา 1 หน้า — 100 บาท</strong><span>ตรวจ 1 ครั้ง ใช้เวลาประมาณ 1 ชั่วโมง</span></div>
+  <div class="pricecard"><strong>จัดทำร่างตามแบบทนาย — 2,000 บาท</strong><span>ใช้เวลาประมาณ 1 วัน ขึ้นอยู่กับความยากง่ายของงาน</span></div>
+  <div class="pricecard urgent"><strong>งานด่วนภายใน 1 ชั่วโมง — 5,000 บาท</strong><span>กรณีเร่งด่วนให้โทรศัพท์ติดต่อโดยตรง</span></div>
+</div>
+
+<div class="contactline"><strong>การติดต่อ:</strong> งานด่วนภายใน 1 ชั่วโมงให้โทรศัพท์ติดต่อโดยตรง ส่วนกรณีทั่วไปแจ้งทาง
+<a href="mailto:janjang.t@gmail.com">janjang.t@gmail.com</a>
+หรือ LINE ID: <strong style="color:#7ed47e">surachet.a</strong></div>
+
+<h3>ลักษณะงานที่รับดำเนินการ</h3>
+<ol>
+<li>รับให้คำปรึกษากฎหมายทุกประเภท โดยมีความเชี่ยวชาญเป็นพิเศษในคดีแรงงาน คดีปกครอง และงานกฎหมายที่เกี่ยวข้อง</li>
+<li>การให้คำปรึกษาเบื้องต้นไม่กำหนดค่าจ้างตายตัว โดยขึ้นอยู่กับความพึงพอใจของผู้รับบริการ</li>
+<li>กรณีมีชิ้นงาน เช่น ร่างสัญญา จัดทำคำฟ้อง งานฟ้องศาลปกครองออนไลน์ หรือเอกสารกฎหมายอื่น มีค่าจ้างตามความเหมาะสมของลักษณะงานและความพึงพอใจของผู้ว่าจ้าง</li>
+<li>ไม่รับงานประสานติดต่อส่วนราชการหรือบุคคลภายนอกเป็นการส่วนตัว แต่หากลูกความประสงค์จะใช้ทนายความ ทางเรามีทีมทนายความและสามารถช่วยประสานหาทนายความ พร้อมทำหน้าที่เป็นที่ปรึกษาคดีได้</li>
+</ol>
+
+<h3>ขั้นตอนการทำงาน</h3>
+<ol>
+<li>ลูกค้าส่งรายละเอียดงานผ่านระบบออนไลน์ อีเมล หรือ LINE</li>
+<li>สอบถามข้อเท็จจริงและขอเอกสารประกอบเบื้องต้น เช่น รายละเอียดสำหรับร่างสัญญา โดยเอกสารตัวจริงลูกความต้องดำเนินการเอง</li>
+<li>จัดส่งร่างเบื้องต้นให้ลูกค้าตรวจสอบ</li>
+<li>แก้ไขงานตามข้อเสนอของลูกค้า ตรวจว่ามีข้อเท็จจริงเพิ่มเติมหรือไม่ และให้ข้อสังเกตตามข้อกฎหมาย</li>
+<li>กำหนดระยะเวลาดำเนินการตามความเร่งด่วน กำหนดใช้งาน ความยากง่าย ประเภทของงาน และทุนทรัพย์ที่เกี่ยวข้อง</li>
+<li>ตัวอย่างเช่น สัญญาที่เกี่ยวกับทุนทรัพย์จำนวนมากอาจใช้เวลามากกว่าสัญญาทั่วไป เช่น สัญญาจ้างงานหรือสัญญาที่ไม่เกี่ยวกับทุนทรัพย์</li>
+<li>ใช้ AI 3 ระบบ ได้แก่ NotebookLM, Claude และ Gemini เพื่อค้นคว้าและตรวจสอบซึ่งกันและกัน และผู้รับงานจะตรวจขั้นตอนสุดท้ายก่อนส่งมอบทุกครั้ง</li>
+</ol>
+
+<h3>ระบบฟ้องคดีและระบบราชการออนไลน์ที่สำคัญ</h3>
+<ul class="system-list">
+<li><a href="https://efiling3.coj.go.th/citizen/" target="_blank" rel="noopener">ศาลยุติธรรม e-Filing ประชาชน</a></li>
+<li><a href="https://efiling4.coj.go.th/eFilingv4-web/" target="_blank" rel="noopener">ศาลยุติธรรม e-Filing v4</a></li>
+<li><a href="https://cios.coj.go.th/" target="_blank" rel="noopener">CIOS</a></li>
+<li><a href="https://cios.coj.go.th/labour/" target="_blank" rel="noopener">Labor e-Service</a></li>
+<li><a href="https://cios.coj.go.th/tracking/" target="_blank" rel="noopener">Case Tracking</a></li>
+<li><a href="https://elitigation.admincourt.go.th/admELitigation/frmLoginEFiling.aspx" target="_blank" rel="noopener">ศาลปกครอง e-Litigation</a></li>
+<li><a href="https://elitigation.admincourt.go.th/admELitigation/frmManual.aspx" target="_blank" rel="noopener">คู่มือคดีปกครอง</a></li>
+<li><a href="https://www.admincourt.go.th/" target="_blank" rel="noopener">เว็บไซต์ศาลปกครอง</a></li>
+<li><a href="https://aclib.admincourt.go.th/" target="_blank" rel="noopener">ACL Library</a></li>
+<li><a href="https://efiling.constitutionalcourt.or.th/" target="_blank" rel="noopener">ศาลรัฐธรรมนูญ e-Filing</a></li>
+<li><a href="https://eservice.labour.go.th/eservice/" target="_blank" rel="noopener">กรมสวัสดิการและคุ้มครองแรงงาน e-Service</a></li>
+<li><a href="https://www.mol.go.th/service-complaint" target="_blank" rel="noopener">ร้องเรียนกระทรวงแรงงาน</a></li>
+<li><a href="https://eworkpermit.doe.go.th/" target="_blank" rel="noopener">e-WorkPermit</a></li>
+<li><a href="https://e-service.doe.go.th/" target="_blank" rel="noopener">DOE e-Services</a></li>
+<li><a href="https://www.dol.go.th/home/" target="_blank" rel="noopener">กรมที่ดิน</a></li>
+<li><a href="https://alrolandonline.alro.go.th/" target="_blank" rel="noopener">ALRO Land Online</a></li>
+<li><a href="https://ratchakitcha.soc.go.th/" target="_blank" rel="noopener">ราชกิจจานุเบกษา</a></li>
+<li><a href="https://info.go.th/" target="_blank" rel="noopener">info.go.th</a></li>
+<li><a href="https://www.dga.or.th/en/citizenportal/" target="_blank" rel="noopener">Citizen Portal</a></li>
+<li><a href="https://data.go.th/" target="_blank" rel="noopener">Open Government Data</a></li>
+<li><a href="https://www.thailand.go.th/home" target="_blank" rel="noopener">Thailand Government Portal</a></li>
+<li><a href="https://www.thaigov.go.th/" target="_blank" rel="noopener">รัฐบาลไทย</a></li>
+<li><a href="https://www.dga.or.th/th/" target="_blank" rel="noopener">DGA</a></li>
+<li><a href="https://admincourt.gdcatalog.go.th/" target="_blank" rel="noopener">Data Catalog ศาลปกครอง</a></li>
+</ul>
+
+<p style="margin-top:12px;color:var(--text-dim)">หมายเหตุ: ข้อมูลระบบออนไลน์อาจมีการเปลี่ยนแปลง ผู้ใช้ควรตรวจสอบประกาศและเงื่อนไขล่าสุดจากเว็บไซต์ทางการก่อนใช้งานทุกครั้ง</p>
+</div>
+
 <div id="groups"></div>
 <div class="empty" id="empty" style="display:none">
 ไม่พบ “<b id="emptyQ"></b>” ในรายการที่มีอยู่
